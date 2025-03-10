@@ -1,0 +1,38 @@
+.footerWrapper {
+  height: 440px;
+  background-color: #000;
+  color: #fff;
+}
+
+.linksWrapper {
+  padding-inline: 135px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 87px;
+}
+
+.linksHeader {
+  font-size: 24px;
+}
+
+.footerCopyright {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  height: 40px;
+  color: #ffffffff;
+  border-top: 1px solid #ffffff;
+  opacity: 60%;
+}
+
+.cImage {
+  margin-bottom: 3px;
+}
+.footerCopyright > p {
+  margin-left: 6px;
+  font-size: 16px;
+}

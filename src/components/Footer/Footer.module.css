@@ -1,5 +1,7 @@
 .footerWrapper {
+  max-width: 1440px;
   height: 440px;
+  margin-inline: auto;
   background-color: #000;
   color: #fff;
 }

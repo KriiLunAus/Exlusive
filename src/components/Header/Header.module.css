@@ -1,0 +1,60 @@
+.headerWrapper {
+  max-width: 1440px;
+  height: 92px;
+  margin-inline: auto;
+  padding: 38px 135px 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exlusive {
+  font-family: "Inter";
+  font-size: 24px;
+}
+
+.links {
+  display: flex;
+  gap: 48px;
+}
+
+.link {
+  color: #000;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: #808080;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputWrapper > input {
+  width: 243px;
+  height: 38px;
+
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: #f5f5f5;
+
+  font-size: 12px;
+}
+
+.inputWrapper > button {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

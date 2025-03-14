@@ -1,0 +1,30 @@
+.notFoundWrapper {
+  max-width: 1440px;
+  height: 696px;
+
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFoundWrapper > h2 {
+  font-size: 110px;
+  margin-bottom: 40px;
+}
+
+.backHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+
+  width: 254px;
+  height: 56px;
+
+  background-color: #db4444;
+  color: #fff;
+  border-radius: 4px;
+}

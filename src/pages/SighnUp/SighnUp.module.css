@@ -1,0 +1,68 @@
+.sighnUpWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 60px 135px 140px 0px;
+}
+
+.form {
+  width: 371px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.createAccHeader {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.enterDetails {
+}
+
+.inputsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+  margin-top: 48px;
+}
+
+.inputsWrapper > input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  opacity: 0.4;
+  padding-bottom: 8px;
+}
+
+.createAccBtn {
+  height: 56px;
+  padding: 16px 122px;
+  margin-bottom: 16px;
+  color: #fafafa;
+  background-color: #db4444;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sighWithGoogle {
+  height: 56px;
+  padding: 16px 82px;
+  margin-bottom: 32px;
+
+  background-color: transparent;
+
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sighWithGoogle > div {
+  display: flex;
+  gap: 16px;
+}

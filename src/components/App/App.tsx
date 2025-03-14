@@ -1,6 +1,7 @@
 import css from "./App.module.css"
 import Footer from '../Footer/Footer'
 import Header from "../Header/Header"
+import SighnUp from "../../pages/SighnUp/SighnUp"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <main className={css.mainWrapper}>
+        <SighnUp />
       </main>
       <Footer />
   </>

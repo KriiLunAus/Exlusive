@@ -44,6 +44,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Видаляємо стандартну стилізацію для всіх ul та il, у яких є атрибут class*/

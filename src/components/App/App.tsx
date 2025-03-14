@@ -1,18 +1,15 @@
 import css from "./App.module.css"
-import Footer from '../Footer/Footer'
-import Header from "../Header/Header"
-import SighnUp from "../../pages/SighnUp/SighnUp"
+import SighnUp from "../../pages/SignUp/SignUp"
+import Layout from "../Layout/Layout"
 
 function App() {
 
   return (
-    <>
-      <Header />
+    <Layout>
       <main className={css.mainWrapper}>
-        <SighnUp />
+        {/* <SighnUp /> */}
       </main>
-      <Footer />
-  </>
+    </Layout>
   )
 }
 

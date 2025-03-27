@@ -32,3 +32,50 @@
   height: 609px;
   background-image: url("../../assets/images/about-side-Image.png");
 }
+
+.statisticsWrapper {
+  margin-top: 140px;
+  margin-inline: auto;
+
+  display: flex;
+  gap: 30px;
+}
+
+.statisticsCard {
+  position: relative;
+  width: 270px;
+  height: 230px;
+  padding-top: 30px;
+
+  border: 1px solid #363738;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: all 300ms ease;
+}
+
+.statisticsCard:hover {
+  background-color: #db4444;
+  border-color: #db4444;
+  color: #fafafa;
+}
+
+.statisticsCard h3 {
+  font-size: 32px;
+  margin-top: 24px;
+}
+
+.statisticsCard:hover div {
+  background-color: rgba(250, 250, 250, 0.3);
+}
+
+.statisticsCard:hover div div {
+  background-color: #fafafa;
+}
+
+.statisticsCard:hover div div img {
+  filter: invert(1);
+}

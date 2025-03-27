@@ -1,5 +1,10 @@
-import css from "./About.module.css"
+import AboutUsIcon from "../../components/AboutUsIcon/AboutUsIcon"
+import aboutUsHome from "../../assets/svg/aboutUsHome.svg"
+import aboutUsDollar from "../../assets/svg/aboutUsDollar.svg"
+import aboutUsDollarBag from "../../assets/svg/aboutUsDollarBag.svg"
+import aboutUsBag from "../../assets/svg/aboutUsBag.svg"
 
+import css from "./About.module.css"
 export default function About() {
   return (
     <section className={css.aboutWrapper}>
@@ -21,8 +26,34 @@ export default function About() {
                     </p>
                   </div>
               </div>
-              <div className={css.aboutSideImage}></div>
+        <div className={css.aboutSideImage}></div>
+      </div>
+      
+      <div className={css.statisticsWrapper}>
+        <div className={css.statisticsCard}>
+          <AboutUsIcon icon={aboutUsHome} />
+          <h3>10.5K</h3>
+          <p>Sallers active on our site</p>
         </div>
+
+        <div className={css.statisticsCard}>
+          <AboutUsIcon icon={aboutUsDollar} />
+          <h3>33K</h3>
+          <p>Monthly Product Sale</p>
+        </div>
+
+        <div className={css.statisticsCard}>
+          <AboutUsIcon icon={aboutUsDollarBag} />
+          <h3>45.5K</h3>
+          <p>Customers on our site</p>
+        </div>
+
+        <div className={css.statisticsCard}>
+          <AboutUsIcon icon={aboutUsBag} />
+          <h3>25K</h3>
+          <p>Anual gross sale in our site</p>
+        </div>
+      </div>
     </section>
   )
 }

@@ -3,12 +3,15 @@ import aboutUsHome from "../../assets/svg/aboutUsHome.svg"
 import aboutUsDollar from "../../assets/svg/aboutUsDollar.svg"
 import aboutUsDollarBag from "../../assets/svg/aboutUsDollarBag.svg"
 import aboutUsBag from "../../assets/svg/aboutUsBag.svg"
+import aboutUsCustomerService from "../../assets/svg/aboutUsCustomerService.svg"
+import aboutUsDelivery from "../../assets/svg/aboutUsDelivery.svg"
+import aboutUsSecure from "../../assets/svg/aboutUsSecure.svg"
 
 import css from "./About.module.css"
 export default function About() {
   return (
     <section className={css.aboutWrapper}>
-          <div className={css.aboutHero}>
+        <div className={css.aboutHero}>
               <div className={css.aboutText}>
                   <h2>Our Story</h2>
                   <div>
@@ -54,6 +57,25 @@ export default function About() {
           <p>Anual gross sale in our site</p>
         </div>
       </div>
+
+
+      <div className={css.customerAssurenseWrapper}>
+        <div className={css.customerAssurenceCard}>
+          <AboutUsIcon icon={aboutUsDelivery} />
+          <h3>free and fast delivery</h3>
+          <p>Free delivery for all orders over 140$</p>
+        </div>
+        <div className={css.customerAssurenceCard}>
+          <AboutUsIcon icon={aboutUsCustomerService} />
+          <h3>24/7 customer service</h3>
+          <p>Friendly 24/7 customer support</p>
+        </div>
+        <div className={css.customerAssurenceCard}>
+          <AboutUsIcon icon={aboutUsSecure} />
+          <h3>money back guarantee</h3>
+          <p>We return money within 30 days</p>
+        </div>
+    </div>
     </section>
   )
 }

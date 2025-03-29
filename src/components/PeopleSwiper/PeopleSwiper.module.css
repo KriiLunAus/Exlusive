@@ -1,0 +1,15 @@
+.swiperWrapper {
+  max-width: 1170px;
+  margin-top: 140px;
+  margin-inline: auto;
+}
+
+.swiper {
+  position: static !important;
+  margin-top: 40px;
+}
+
+.activeBullet {
+  opacity: 1 !important;
+  background: #db4444 !important;
+}

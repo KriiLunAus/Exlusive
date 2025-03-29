@@ -6,9 +6,23 @@ import aboutUsBag from "../../assets/svg/aboutUsBag.svg"
 import aboutUsCustomerService from "../../assets/svg/aboutUsCustomerService.svg"
 import aboutUsDelivery from "../../assets/svg/aboutUsDelivery.svg"
 import aboutUsSecure from "../../assets/svg/aboutUsSecure.svg"
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import css from "./About.module.css"
+import PeopleSwiper from "../../components/PeopleSwiper/PeopleSwiper"
 export default function About() {
+
+const params = {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  slidesPerView: 1, // Adjust to display how many slides per view
+  spaceBetween: 10, // Adjust the spacing between slides
+  loop: true // Optionally enable looping
+};
+
+
   return (
     <section className={css.aboutWrapper}>
         <div className={css.aboutHero}>
@@ -58,6 +72,7 @@ export default function About() {
         </div>
       </div>
 
+      <PeopleSwiper />
 
       <div className={css.customerAssurenseWrapper}>
         <div className={css.customerAssurenceCard}>

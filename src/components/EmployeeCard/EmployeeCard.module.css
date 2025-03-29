@@ -1,0 +1,24 @@
+.cardWrapper {
+  width: 370px;
+}
+
+.cardWrapper > h3 {
+  font-family: Inter sans-serif;
+  font-size: medium;
+  line-height: 30px;
+  letter-spacing: 4%;
+  font-size: 32px;
+  margin-top: 32px;
+}
+
+.cardWrapper > p {
+  margin-top: 8px;
+}
+
+.socialWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}

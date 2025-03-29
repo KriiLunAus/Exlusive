@@ -1,8 +1,11 @@
 import css from "./Header.module.css"
 import clsx from "clsx"
 import { NavLink } from "react-router-dom"
-
 import searchIcon from "../../assets/svg/search.svg"
+import cartIcon from "../../assets/svg/Cart.svg"
+import wishlistIcon from "../../assets/svg/Wishlist.svg"
+import userIcon from "../../assets/svg/user.svg"
+
 
 export default function Header() {
     
@@ -18,9 +21,16 @@ export default function Header() {
                 <NavLink className={({isActive})=>buildLinkClass(isActive)} to="/about">About</NavLink>
                 <NavLink className={({isActive})=>buildLinkClass(isActive)} to="/sign-up">Sign Up</NavLink>
             </div>
-            <div className={css.inputWrapper}>
-                <input placeholder="What are you looking for?" type="text" />
-                <button><img src={searchIcon} alt="search" width={24} height={24} /></button>
+            <div style={{ display: "flex", gap: "24px"}}>
+                <div className={css.inputWrapper}>
+                    <input placeholder="What are you looking for?" type="text" />
+                    <button><img src={searchIcon} alt="search" width={24} height={24} /></button>
+                </div>
+                <div className={css.userInt}>
+                    <img width={32} height={32} src={wishlistIcon}/>
+                    <img width={32} height={32} src={cartIcon} />
+                    <img width={32} height={32} src={userIcon} />
+                </div>
             </div>
         </header>
     )

@@ -31,6 +31,12 @@
   text-decoration-color: #808080;
 }
 
+.rightSideHeader {
+  position: relative;
+  display: flex;
+  gap: 24px;
+}
+
 .inputWrapper {
   position: relative;
 }
@@ -65,4 +71,43 @@
 .userInt {
   display: flex;
   gap: 16px;
+}
+
+.dropDownBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.accDropDownWrapper {
+  position: absolute;
+  top: 38px;
+  right: 0px;
+
+  width: 224px;
+  height: 208px;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.accDropDown {
+  width: 224px;
+  height: 208px;
+
+  padding: 18px 12px 10px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  border-radius: 4px;
+  backdrop-filter: blur(70px);
+
+  color: #fafafa;
+}
+
+.dropDownLink {
+  display: flex;
+  gap: 16px;
+
+  font-size: 14px;
+  color: #fafafa;
 }

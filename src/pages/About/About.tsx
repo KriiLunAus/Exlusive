@@ -3,13 +3,11 @@ import aboutUsHome from "../../assets/svg/aboutUsHome.svg"
 import aboutUsDollar from "../../assets/svg/aboutUsDollar.svg"
 import aboutUsDollarBag from "../../assets/svg/aboutUsDollarBag.svg"
 import aboutUsBag from "../../assets/svg/aboutUsBag.svg"
-import aboutUsCustomerService from "../../assets/svg/aboutUsCustomerService.svg"
-import aboutUsDelivery from "../../assets/svg/aboutUsDelivery.svg"
-import aboutUsSecure from "../../assets/svg/aboutUsSecure.svg"
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+
+
 import css from "./About.module.css"
 import PeopleSwiper from "../../components/PeopleSwiper/PeopleSwiper"
+import Assurence from "../../components/Assurence/Assurence"
 export default function About() {
 
 const params = {
@@ -74,23 +72,7 @@ const params = {
 
       <PeopleSwiper />
 
-      <div className={css.customerAssurenseWrapper}>
-        <div className={css.customerAssurenceCard}>
-          <AboutUsIcon icon={aboutUsDelivery} />
-          <h3>free and fast delivery</h3>
-          <p>Free delivery for all orders over 140$</p>
-        </div>
-        <div className={css.customerAssurenceCard}>
-          <AboutUsIcon icon={aboutUsCustomerService} />
-          <h3>24/7 customer service</h3>
-          <p>Friendly 24/7 customer support</p>
-        </div>
-        <div className={css.customerAssurenceCard}>
-          <AboutUsIcon icon={aboutUsSecure} />
-          <h3>money back guarantee</h3>
-          <p>We return money within 30 days</p>
-        </div>
-    </div>
+      <Assurence />
     </section>
   )
 }

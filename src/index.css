@@ -63,7 +63,6 @@ img,
 picture {
   max-width: 100%;
   display: block;
-  height: auto;
 }
 
 /* Вказуємо зрозумілу періодичність у потоці даних у article*/

@@ -1,0 +1,103 @@
+.itemCardWrapper {
+  width: 270px;
+  height: 350px;
+}
+
+.itemImg {
+  position: relative;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 35px;
+
+  background-color: #f5f5f5;
+  border-radius: 4px;
+
+  transition: all 200ms ease-in;
+}
+
+.addToCartBtn {
+  display: none;
+  width: 100%;
+  height: 41px;
+
+  cursor: pointer;
+
+  background-color: #000;
+  color: #fff;
+}
+
+.itemImg:hover {
+  padding-top: 15px;
+  justify-content: space-between;
+}
+
+.itemImg:hover .addToCartBtn {
+  display: block;
+}
+
+.discount {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  width: 55px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  background-color: #db4444;
+  border-radius: 4px;
+
+  font-size: 12px;
+}
+
+.cardIconsWrapper {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardIconsWrapper div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  border-radius: 17px;
+}
+
+.itemInfo {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.itemInfo p:first-child {
+  font-weight: 600;
+}
+
+.price {
+  color: #db4444;
+}
+
+.previousPrice {
+  color: #000;
+  margin-left: 12px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.reviewsCount {
+  opacity: 0.5;
+}
